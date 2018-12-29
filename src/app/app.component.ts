@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Angular';
+export class AppComponent
+ {
+  //title = 'Angular';
+  post ={
+    title:'Angular',
+    isFavorite:true
+  }
+  onClickFavoriteChange(){
+    console.log("Favorite Changed");
+  }
 }
