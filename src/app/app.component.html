@@ -1,5 +1,5 @@
 <!-- <favorite [isFavorite]="post.isFavorite" (change)="onClickFavoriteChange($event)"></favorite> -->
-<bootstrap-panel>
+<!-- <bootstrap-panel>
     <ng-container class="heading">Heading</ng-container>
     <ng-container class="body">
         <h2>
@@ -9,4 +9,11 @@
             some content here...
         </p>
     </ng-container>
-</bootstrap-panel>
+</bootstrap-panel> -->
+
+<div *ngIf="Courses.length>0">
+    List of Courses
+</div>
+<div *ngIf="Courses.length==0">
+    No Courses
+</div>

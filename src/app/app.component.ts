@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FavoriteChangedEventArgs } from './favorite/favorite.component';
+// import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +9,12 @@ import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 export class AppComponent
  {
   //title = 'Angular';
-  post ={
-    title:'Angular',
-    isFavorite:true
-  }
-  onClickFavoriteChange(eventArgs: FavoriteChangedEventArgs){
-    console.log("Favorite Changed"+eventArgs);
-  }
+  // post ={
+  //   title:'Angular',
+  //   isFavorite:true
+  // }
+  // onClickFavoriteChange(eventArgs: FavoriteChangedEventArgs){
+  //   console.log("Favorite Changed"+eventArgs);
+  // }
+    Courses=[1,2];
 }
