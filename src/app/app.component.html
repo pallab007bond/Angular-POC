@@ -11,9 +11,9 @@
     </ng-container>
 </bootstrap-panel> -->
 
-<div *ngIf="Courses.length>0">
+<div *ngIf="Courses.length>0; else noCourses">
     List of Courses
 </div>
-<div *ngIf="Courses.length==0">
+<ng-template #noCourses>
     No Courses
-</div>
+</ng-template>
