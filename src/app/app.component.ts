@@ -8,13 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent
  {
-  //title = 'Angular';
-  // post ={
-  //   title:'Angular',
-  //   isFavorite:true
-  // }
-  // onClickFavoriteChange(eventArgs: FavoriteChangedEventArgs){
-  //   console.log("Favorite Changed"+eventArgs);
-  // }
-    Courses=[1,2];
+   viewMode='list';
 }
