@@ -11,10 +11,10 @@
     </ng-container>
 </bootstrap-panel> -->
 
-<div *ngIf="Courses.length>0; then CouresList  else noCourses"></div>
-<ng-template #CouresList>
-    List of Courses
-</ng-template>
-<ng-template #noCourses>
+<div  [hidden]="Courses.length>0">
+        List of Courses
+</div>
+    
+<div [hidden]="Courses.length==0">
     No Courses
-</ng-template>
+</div>
