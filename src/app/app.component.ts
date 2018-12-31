@@ -8,18 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent
  {
-   courses=[
-     {id: 1,name:'Course1'},
-     {id: 2,name:'Course2'},
-     {id: 3,name:'Course3'}
-   ]
-   onAdd()
+   courses;
+   onLoad()
    {
-      this.courses.push({id: 4,name:'Course4'});
+      this.courses=[
+  {id: 1,name:'Course1'},
+  {id: 2,name:'Course2'},
+  {id: 3,name:'Course3'}
+];
    }
-   onRemove(course)
+
+   trackCourse(index,course)
    {
-      let index= this.courses.indexOf(course);
-      this.courses.splice(index,1);
+     return course ? course.id : undefined;
    }
 }
